@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/logo-nikola-tesla.png";
+import backToSchool from "@/assets/back-to-school-2026.png";
 import {
   Phone,
   MessageCircle,
@@ -86,17 +87,24 @@ function Landing() {
         </div>
       </header>
 
+      {/* BACK TO SCHOOL BANNER */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-6">
+          <img
+            src={backToSchool}
+            alt="Back to School · Ciclo 2026-2027 · Próximamente"
+            className="w-full h-auto rounded-2xl"
+          />
+        </div>
+      </section>
+
       {/* HERO */}
       <section id="top" className="relative overflow-hidden bg-cream">
         <div className="absolute inset-0 -z-0 opacity-60">
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
           <div className="absolute top-1/2 -left-24 h-80 w-80 rounded-full bg-gold/20 blur-3xl" />
         </div>
-        <div className="relative mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-28 lg:py-36 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs sm:text-sm font-semibold text-primary mb-8">
-            <Sparkles className="h-3.5 w-3.5" />
-            Inscripciones abiertas · Ciclo 2026-2027
-          </div>
+        <div className="relative mx-auto max-w-5xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 text-center">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-medium leading-[1.1] tracking-tight text-foreground">
             Formamos personas que saben{" "}
             <span className="italic text-primary">quiénes son.</span>
